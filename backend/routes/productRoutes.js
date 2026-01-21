@@ -1,4 +1,3 @@
-const auth = require("../middleware/auth");
 const express = require("express");
 const Product = require("../models/Product");
 const router = express.Router();
@@ -9,13 +8,12 @@ router.get("/", async (req, res) => {
   res.json(products);
 });
 
-// ADD product
-router.post("/add", auth, async (req, res) => {
+// ADD product (NO auth for now)
+router.post("/add", async (req, res) => {
   const product = new Product(req.body);
   await product.save();
   res.json({ message: "Product added" });
 });
-
 
 // DELETE product
 router.delete("/:id", async (req, res) => {
