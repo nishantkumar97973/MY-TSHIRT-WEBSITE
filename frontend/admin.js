@@ -1,8 +1,9 @@
 const API_URL = "https://t-shirt-backend-3.onrender.com";
 
+const api = "https://t-shirt-backend-3.onrender.com/api/products";
 
 
-const api = "http://localhost:5000/api/products";
+
 
 // LOAD PRODUCTS
 function loadProducts() {
