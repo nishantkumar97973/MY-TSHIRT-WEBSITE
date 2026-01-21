@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <h1>🧑‍💼 Admin Panel – Add Product</h1>
+
+  <form id="productForm">
+    <input type="text" placeholder="Product Name" id="name" required><br><br>
+    <input type="number" placeholder="Price" id="price" required><br><br>
+    <input type="text" placeholder="Image URL" id="image" required><br><br>
+    <textarea placeholder="Description" id="description"></textarea><br><br>
+    <button type="submit">Add Product</button>
+  </form>
+  <hr>
+    <h2>📦 All Products</h2>
+    <div id="productList">
+        </div>
+
+
+
+  <p id="msg"></p>
+
+  <script src="admin.js"></script>
+</body>
+</html>
