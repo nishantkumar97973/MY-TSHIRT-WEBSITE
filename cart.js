@@ -1,10 +1,7 @@
 const API_URL = "https://t-shirt-backend-3.onrender.com";
 const token = localStorage.getItem("token");
 
-if (!token) {
-  alert("Please login first");
-  window.location.href = "login.html";
-}
+
 
 
 const cartItemsDiv = document.getElementById("cartItems");
@@ -51,3 +48,4 @@ function checkout() {
 }
 
 loadCart();
+
